@@ -12,13 +12,13 @@ This Package enables you to Categorize your Eloquent Models. just use the trait 
 
 ## Installation
 
-	composer require alibayat/laravel-categorizable
+	composer require ehsanmoradi/laravel-categorizable
 
 #### Publish and Run the migrations
 
 
 ```bash
-php artisan vendor:publish --provider="AliBayat\LaravelCategorizable\CategorizableServiceProvider"
+php artisan vendor:publish --provider="EhsanMoradi\LaravelCategorizable\CategorizableServiceProvider"
 
 php artisan migrate
 ```
@@ -28,7 +28,7 @@ Laravel Categorizable package will be auto-discovered by Laravel. and if not: re
 ```php
 'providers' => [
 	...
-	\AliBayat\LaravelCategorizable\CategorizableServiceProvider::class,
+	\EhsanMoradi\LaravelCategorizable\CategorizableServiceProvider::class,
 ],
 ```
 
@@ -41,12 +41,11 @@ Laravel Categorizable package will be auto-discovered by Laravel. and if not: re
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use AliBayat\LaravelCategorizable\Categorizable;
+use EhsanMoradi\LaravelCategorizable\Categorizable;
 
 class Post extends Model
 {
 	use Categorizable;
-
 }
 
 ```
@@ -59,7 +58,7 @@ https://github.com/lazychaser/laravel-nestedset
 
 ```php
 use App\Post;
-use AliBayat\LaravelCategorizable\Category;
+use EhsanMoradi\LaravelCategorizable\Category;
 
 // first we create a bunch of categories
 
@@ -140,7 +139,6 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
 	    $frontendCategory
 	    ]); 
 
-
     // removes attached categories & adds the given categories
 ```
 
@@ -156,7 +154,6 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
 	    $backendCategory
 	    ]);
 
-
     // return boolean
 ```
 
@@ -164,14 +161,12 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
 ```php
     $post->categoriesList();
 
-
     // return array [id => name]
 ```
 
 ### List of categories IDs attached to the post (array)
 ```php
     $post->categoriesId();
-
 
     // return array
 ```
@@ -181,7 +176,6 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
     $categoryPosts = Category::find(1)
 	    ->entries(Post::class)
 	    ->get();
-
 
     // return collection
 ```
@@ -194,7 +188,6 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
 ```php
     $postWithCategories = Post::with('categories')
 	    ->get();
-
 
      // you have access to categories() relationship in case you need eager loading
     
@@ -238,4 +231,4 @@ $frontendCategory = Category::find(3);		// 'FrontEnd'
 
 #### Credits
 
- - Ali Bayat - <ali.bayat@live.com>
+ - Ehsan Moradi - <ehsan-moradi@live.com>
