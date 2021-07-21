@@ -2,7 +2,7 @@
     "name": "ehsanmoradi/categorizable",
 	"description": "Implementing Categories system for Laravel's Eloquent models.",
 	"license": "MIT",
-	"keywords": ["Laravel", "Eloquent", "Laravel-Categorizable", "Laravel Categorizable"],
+	"keywords": ["Laravel", "Eloquent", "Categorizable", "Laravel Categorizable"],
 	"authors": [
 		{
 		    "name": "Ehsan Moradi",
