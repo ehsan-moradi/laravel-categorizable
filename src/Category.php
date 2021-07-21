@@ -60,8 +60,8 @@ class Category extends Model
     public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()
-		    ->generateSlugsFrom(config('laravel-categorizable.generate_slugs_from'))
-            ->saveSlugsTo(config('laravel-categorizable.save_slugs_to'))
+		    ->generateSlugsFrom(config('categorizable.generate_slugs_from'))
+            ->saveSlugsTo(config('categorizable.save_slugs_to'))
             ;
 
     }
