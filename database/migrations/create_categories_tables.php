@@ -19,7 +19,7 @@ class CreateCategoriesTables extends Migration
             $table->string('type')->default('default');
             $table->string('url')->nullable();
             $table->string('img')->nullable();
-            $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('status')->default(0);
             $table->string('keywords')->nullable();
             $table->string('description')->nullable();
             $table->text('body')->nullable();
