@@ -1,0 +1,40 @@
+{
+    "name": "ehsanmoradi/laravel-categorizable",
+	"description": "Implementing Categories system for Laravel's Eloquent models.",
+	"license": "MIT",
+	"keywords": ["Laravel", "Eloquent", "Laravel-Categorizable", "Laravel Categorizable"],
+	"authors": [
+		{
+		    "name": "Ehsan Moradi",
+		    "email": "ehsan-moradi@live.com"
+		}
+	],
+    "require": {
+        "php": "^7.2",
+        "illuminate/database": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "kalnoy/nestedset": "^5.0",
+        "spatie/laravel-sluggable": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EhsanMoradi\\LaravelCategorizable\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "EhsanMoradi\\LaravelCategorizable\\CategorizableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
