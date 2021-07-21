@@ -30,12 +30,6 @@ class CreateCategoriesTables extends Migration
         Schema::create('categories_models', function (Blueprint $table) {
             $table->unsignedBigInteger('category_id');
             $table->morphs('model');
-
-            $table->index([
-                'model_id',
-                'model_type',
-                'category_id'
-            ]);
         });
     }
 
