@@ -22,4 +22,8 @@ return [
 
     ],
 
+    'generate_slugs_from' => 'name',
+	
+    'save_slugs_to' => 'slug'
+
 ];
