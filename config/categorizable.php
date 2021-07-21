@@ -18,7 +18,7 @@ return [
         |--------------------------------------------------------------------------
         */
 
-        'category' => \EhsanMoradi\LaravelCategorizable\Category::class,
+        'category' => \EhsanMoradi\Categorizable\Category::class,
 
     ],
 

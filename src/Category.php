@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EhsanMoradi\LaravelCategorizable;
+namespace EhsanMoradi\Categorizable;
 
 use Spatie\Sluggable\HasSlug;
 use Kalnoy\Nestedset\NodeTrait;

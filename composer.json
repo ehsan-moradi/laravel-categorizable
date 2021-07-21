@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EhsanMoradi\\LaravelCategorizable\\": "src/"
+            "EhsanMoradi\\Categorizable\\": "src/"
         }
     },
     "config": {
@@ -31,7 +31,7 @@
         },
         "laravel": {
             "providers": [
-                "EhsanMoradi\\LaravelCategorizable\\CategorizableServiceProvider"
+                "EhsanMoradi\\Categorizable\\CategorizableServiceProvider"
             ]
         }
     },

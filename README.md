@@ -8,17 +8,17 @@ This Package enables you to Categorize your Eloquent Models. just use the trait 
 
 ### Requirements
 - PHP 7.2+
-- Laravel 7+
+- Laravel 8+
 
 ## Installation
 
-	composer require ehsanmoradi/laravel-categorizable
+	composer require ehsanmoradi/categorizable
 
 #### Publish and Run the migrations
 
 
 ```bash
-php artisan vendor:publish --provider="EhsanMoradi\LaravelCategorizable\CategorizableServiceProvider"
+php artisan vendor:publish --provider="EhsanMoradi\Categorizable\CategorizableServiceProvider"
 
 php artisan migrate
 ```
@@ -28,7 +28,7 @@ Laravel Categorizable package will be auto-discovered by Laravel. and if not: re
 ```php
 'providers' => [
 	...
-	\EhsanMoradi\LaravelCategorizable\CategorizableServiceProvider::class,
+	\EhsanMoradi\Categorizable\CategorizableServiceProvider::class,
 ],
 ```
 
@@ -41,7 +41,7 @@ Laravel Categorizable package will be auto-discovered by Laravel. and if not: re
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use EhsanMoradi\LaravelCategorizable\Categorizable;
+use EhsanMoradi\Categorizable\Categorizable;
 
 class Post extends Model
 {
@@ -58,7 +58,7 @@ https://github.com/lazychaser/laravel-nestedset
 
 ```php
 use App\Post;
-use EhsanMoradi\LaravelCategorizable\Category;
+use EhsanMoradi\Categorizable\Category;
 
 // first we create a bunch of categories
 

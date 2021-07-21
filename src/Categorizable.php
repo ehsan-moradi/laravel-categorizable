@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace EhsanMoradi\LaravelCategorizable;
+namespace EhsanMoradi\Categorizable;
 
-use EhsanMoradi\LaravelCategorizable\Category;
+use EhsanMoradi\Categorizable\Category;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 trait Categorizable

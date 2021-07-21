@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EhsanMoradi\LaravelCategorizable;
+namespace EhsanMoradi\Categorizable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class CategorizableServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__ . '/../config/laravel-categorizable.php' => config_path('laravel-categorizable.php'),
+            __DIR__ . '/../config/categorizable.php' => config_path('categorizable.php'),
         ], 'config');
     }
 
@@ -27,6 +27,6 @@ class CategorizableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/laravel-categorizable.php', 'laravel-categorizable');
+        $this->mergeConfigFrom(__DIR__ . '/../config/categorizable.php', 'categorizable');
     }
 }
