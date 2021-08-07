@@ -34,7 +34,7 @@ trait Categorizable
      */
     public function categorizableModel(): string
     {
-        return config('laravel-categorizable.models.category');
+        return config('categorizable.models.category');
     }
 
     /**
